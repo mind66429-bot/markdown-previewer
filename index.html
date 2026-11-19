@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live Markdown Previewer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Markdown Previewer</h1>
+    <span id="stats">0 words</span>
+  </header>
+  <main class="workspace">
+    <textarea id="editor" placeholder="Type Markdown here..."># Welcome to Markdown Previewer
+
+Write **bold**, *italic*, or `inline code` on the left and see it rendered live on the right.
+
+- Fast and lightweight
+- Clean split-pane layout
+- Instant preview</textarea>
+    <section id="preview" class="preview"></section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
